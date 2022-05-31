@@ -130,7 +130,7 @@ body, ul{margin:0;padding:0;}
         let musicNum = parseInt(Math.random()*(m-n)+n);
         // 创建<audio>标签(参数:音频文件路径)
         let path = './audio/' + musicNum + '.mp3'
-        const audio = new Audio('./audio/text.mp3');
+        const audio = new Audio(path);
         audio.preload = "auto";
         // audio.loop = "true";
         // 将audioObj设置为全局变量
@@ -209,7 +209,7 @@ body, ul{margin:0;padding:0;}
         img.style.width = "100%";
 
         // 记录时间,显示字体
-        setTimeout(this.displayFont, 1500);
+        setTimeout(this.displayFont, 2000);
 
         
     }
