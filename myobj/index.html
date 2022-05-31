@@ -132,6 +132,7 @@ body, ul{margin:0;padding:0;}
         let path = './audio/' + musicNum + '.mp3'
         const audio = new Audio(path);
         audio.preload = "auto";
+	audio.loop = true;
         // 将audioObj设置为全局变量
         audioObj = audio;
     }
@@ -140,7 +141,6 @@ body, ul{margin:0;padding:0;}
     Ping.prototype.getmusic = function(m, n){
 
         audioObj.play();
-        audioObj.loop = true;
 
         //销毁按钮
         let button = document.getElementById("btn");
