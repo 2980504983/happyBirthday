@@ -159,7 +159,7 @@ body, ul{margin:0;padding:0;}
         let backgroundNum = parseInt(Math.random()*(m-n)+n);
         let body = document.getElementsByTagName('body')[0];
         // background/1-19.jpg
-        body.style.backgroundImage = "url(" + "/tree/main/myobj/background/" + backgroundNum + ".jpg" + ")";
+        body.style.backgroundImage = "url(" + "/myobj/background/" + backgroundNum + ".jpg" + ")";
         body.style.backgroundRepeat = "no-repeat";
         body.style.backgroundSize = "cover";
         body.style.position = "center";
@@ -171,7 +171,7 @@ body, ul{margin:0;padding:0;}
         cakeNum = parseInt(Math.random()*(m-n)+n);
         let li = document.getElementsByTagName("li");
         for(let i=0;i<li.length;i++){
-            li[i].style.background = "url(" + "/tree/main/myobj/img/" + cakeNum + ".jpg" + ")";
+            li[i].style.background = "url(" + "/myobj/img/" + cakeNum + ".jpg" + ")";
 
         // 清楚被移动格子的图像
         let geziByMove = document.getElementsByClassName('active')[0];
@@ -202,7 +202,7 @@ body, ul{margin:0;padding:0;}
         div.style.bottom = "0";
         div.zIndex = 5;
 
-        img.style.backgroundImage = "url(" + "/tree/main/myobj/img/" + + cakeNum + ".jpg" + ")";
+        img.style.backgroundImage = "url(" + "/myobj/img/" + + cakeNum + ".jpg" + ")";
         img.style.backgroundRepeat = "no-repeat";
         img.style.backgroundSize = "cover";
         img.style.height = "100%";
