@@ -129,7 +129,7 @@ body, ul{margin:0;padding:0;}
         let n = 19;
         let musicNum = parseInt(Math.random()*(m-n)+n);
         // 创建<audio>标签(参数:音频文件路径)
-        let path = './audio/' + musicNum + '.mp3'
+        let path = './tree/main/myobj/audio/' + musicNum + '.mp3'
         const audio = new Audio(path);
         audio.preload = "auto";
         // audio.loop = "true";
@@ -159,7 +159,7 @@ body, ul{margin:0;padding:0;}
         let backgroundNum = parseInt(Math.random()*(m-n)+n);
         let body = document.getElementsByTagName('body')[0];
         // background/1-19.jpg
-        body.style.backgroundImage = "url(" + "background/" + backgroundNum + ".jpg" + ")";
+        body.style.backgroundImage = "url(" + "/tree/main/myobj/background/" + backgroundNum + ".jpg" + ")";
         body.style.backgroundRepeat = "no-repeat";
         body.style.backgroundSize = "cover";
         body.style.position = "center";
@@ -171,7 +171,7 @@ body, ul{margin:0;padding:0;}
         cakeNum = parseInt(Math.random()*(m-n)+n);
         let li = document.getElementsByTagName("li");
         for(let i=0;i<li.length;i++){
-            li[i].style.background = "url(" + "img/" + cakeNum + ".jpg" + ")";
+            li[i].style.background = "url(" + "/tree/main/myobj/img/" + cakeNum + ".jpg" + ")";
 
         // 清楚被移动格子的图像
         let geziByMove = document.getElementsByClassName('active')[0];
