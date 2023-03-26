@@ -118,7 +118,7 @@ body, ul{margin:0;padding:0;}
         let backgroundNum = parseInt(Math.random()*(m-n)+n);
         let body = document.getElementsByTagName('body')[0];
         // background/1-19.jpg
-        body.style.backgroundImage = "url(" + "/myobj/background/" + + backgroundNum + ".jpg" + ")";
+        body.style.backgroundImage = "url(" + "/happyBirthday/myobj/background/" + + backgroundNum + ".jpg" + ")";
         body.style.backgroundRepeat = "no-repeat";
         body.style.backgroundSize = "cover";
         body.style.position = "center";
@@ -128,7 +128,7 @@ body, ul{margin:0;padding:0;}
     Ping.prototype.over = function(){
         // 切换背景
         let body = document.getElementsByTagName('body')[0];
-        body.style.backgroundImage = "url(/myobj/background/over.jpg)";
+        body.style.backgroundImage = "url(/happyBirthday/myobj/background/over.jpg)";
 
         // 删除ul, 创建一个div在里面重新加载图片
         let ul = document.getElementById('ul');
